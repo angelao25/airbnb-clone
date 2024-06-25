@@ -12,6 +12,9 @@ module.exports = {
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        "airbnb-logo": "#eb4c60",
+      },
     },
   },
   plugins: [
