@@ -50,23 +50,32 @@
           data-transition-leave-start="opacity-100 translate-y-0 sm:scale-100"
           data-transition-leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
     >
-        <div>
-          <h3 class="text-md font-semibold leading-6 text-gray-900 text-center mb-4" id="modal-title">Log in or sign up</h3>
-          <div class="relative">
-            <div class="absolute inset-0 flex items-center" aria-hidden="true">
-              <div class="w-full border-t border-gray-300"></div>
-            </div>
-          </div>
-
-          <div class="pt-4">
-              <h4 class="text-2xl leading-6 text-gray-900 mt-2 font-medium">Welcome to Airbnb</h4>
-              <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet labore.</p>
-              <div class="border border-gray-300 mt-6 rounded-md px-3 pb-1.5 pt-2.5 shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-black focus-within:border-black">
-                <label for="name" class="block text-xs font-medium text-gray-900">Email</label>
-                <input type="text" name="name" id="name" class="block w-full border-0 p-0 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="joesmith@gmail.com">
-              </div>
-            </div>
+    <div>
+      <div class="flex">
+        <div class="flex-none absolute cursor-pointer" data-modal-target="closeButton">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
         </div>
+        <div class="grow">
+          <h3 class="text-md font-semibold leading-6 text-gray-900 text-center mb-4" id="modal-title">Log in or sign up</h3>
+          </div>
+    </div>
+    <div class="relative">
+      <div class="absolute inset-0 flex items-center" aria-hidden="true">
+        <div class="w-full border-t border-gray-300"></div>
+      </div>
+    </div>
+
+    <div class="pt-4">
+      <h4 class="text-2xl leading-6 text-gray-900 mt-2 font-medium">Welcome to Airbnb</h4>
+      <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet labore.</p>
+      <div class="border border-gray-300 mt-6 rounded-md px-3 pb-1.5 pt-2.5 shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-black focus-within:border-black">
+        <label for="name" class="block text-xs font-medium text-gray-900">Email</label>
+        <input type="text" name="name" id="name" class="block w-full border-0 p-0 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="joesmith@gmail.com">
+      </div>
+    </div>
+      </div>
         <div class="my-5 sm:my-6">
           <%# <button type="button" class="inline-flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Go back to dashboard</button> %>
           <button type="button" class="w-full justify-center inline-flex rounded-md bg-red-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 airbnb-pink-gradient">Continue</button>

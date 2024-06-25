@@ -3,10 +3,16 @@ import { enter, leave, toggle } from "el-transition";
 
 // Connects to data-controller="modal"
 export default class extends Controller {
+  static targets = ["closeButton"];
   connect() {
     document
       .getElementById("modal-wrapper")
       .addEventListener("click", this.closeModal);
+    this.closeButtonTarget.addEventListener("click", () => {
+      leave(document.getElementById("modal-wrapper"));
+      leave(document.getElementById("modal-backdrop"));
+      leave(document.getElementById("modal-panel"));
+    });
   }
 
   closeModal(event) {
