@@ -17,3 +17,21 @@
     rgb(215, 4, 102) 100%
   ) !important;
 }
+
+.invalid-inset-input-text-field {
+  border-color: rgb(244, 63, 94) !important;
+
+
+  label {
+    color: rgb(244, 63, 94) !important;
+  }
+
+  input[type="email"], input[type="text"] {
+    &:focus {
+      border-color: rgb(244, 63, 94) !important;
+    }
+      color: rgb(244, 63, 94) !important;
+  }
+
+
+}
